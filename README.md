@@ -35,7 +35,7 @@ Este projeto é um trabalho avaliativo feito para o IFPB — Campus Catolé do R
 - `CodeIgniter`
 - `Visual Studio Code`
 
-# Autor
+## Autor
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/154551754?v=4" width=115><br><sub>Carlos Henrique</sub>](https://github.com/Kafkarlos) |  
 | :---: | 
 
