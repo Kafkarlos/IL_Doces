@@ -30,6 +30,7 @@ Este projeto é um trabalho avaliativo feito para o IFPB — Campus Catolé do R
 ## ⚙️ Tecnologias Utilizadas
 - `HTML`
 - `CSS`
+- `JavaScript`
 - `PHP`
 - `Bootstrap`
 - `CodeIgniter`
