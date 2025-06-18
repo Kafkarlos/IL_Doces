@@ -39,7 +39,7 @@ $produtos = json_decode(file_get_contents($url_produtos));
             <div class="card card-cate bg-rosadark" style="width: 13rem">
               <a href="<?php echo '#' . $categoria->cate_id ?>"><img
                   src="<?php echo $url . 'categorias/' . $categoria->cate_id . '/' . $categoria->cate_imagem ?>"
-                  class="card-img-top w-50" alt="..." />
+                  class="card-img-top w-50" alt="<?php echo $url . $categoria->cate_id . '/' . $categoria->cate_descricao?>" />
                 <div class="card-body">
                   <h5 class="card-text text-center c-white"><?php echo $categoria->cate_descricao ?></h5>
                 </div>
@@ -60,7 +60,7 @@ $produtos = json_decode(file_get_contents($url_produtos));
               <?php if ($produto->prod_categoria == $categoria->cate_id): ?>
                 <div class="card m-5 col-4" style="width: 15rem">
                   <img src="<?php echo $url . 'produtos/' . $produto->prod_id . '/' . $produto->prod_imagem; ?>" class="card-img-top card-t" style="height: 15rem"
-                    alt="..." />
+                    alt="<?php echo $url . 'produtos/' . $produto->prod_id . '/' . $produto->prod_descricao; ?>" />
                   <div class="card-body">
                     <h5 class="card-title"><?php echo $produto->prod_descricao ?></h5>
 
