@@ -1,0 +1,148 @@
+/* Paleta de cores */
+/* 
+Rosa escuro: #A6033F
+Rosa médio: #BF045B
+Rosa claro: #D9048E
+Bege neutro: #BF6060
+Bege claro: #F2B6B6
+*/
+
+.bg-rosadark{
+    background-color: #A6033F;
+}
+
+.bg-rosam{
+    background-color: #BF045B;
+}
+
+.bg-rosaclaro{
+    background-color: #D9048E;
+}
+
+header{
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+    width: 8vw;
+    padding: 0.5rem;
+
+    animation-duration: 2s;
+    animation-name: logz;
+}
+
+img{
+    width: 100%;
+    border-radius: 90%;
+}
+
+.sidebar{
+    height: 100%;
+    
+}
+
+.c-white{
+    color: white;
+}
+
+.c-bege{
+    color: #BF6060;
+}
+
+.titulo-produto{
+    color: #A6033F;
+}
+
+.card-cate{
+    border: none;
+    margin: auto;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: all 1s;
+}
+
+.card-cate:hover{
+    border: solid white 1px;
+    background-color: #BF045B;
+    top: -0.5rem;
+}
+
+.aviso{
+    filter: drop-shadow(#BF045B 0.2rem 0.2rem 10px);
+}
+
+hr{
+    border: 0.5vh dotted black;
+}
+
+.btnc{
+    border-radius: 100%;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+p span{
+    color: #D9048E;
+}
+
+@media(max-width: 768px){
+    .logo img{
+        width: 10vw;
+    }
+    .categorias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100vw;
+        gap: 2rem;
+        justify-items: center;
+    }
+    h2{
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px){
+    .categorias{
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes logz{
+    from{
+        width: 50vw;
+    }
+    to{
+        width: 8vw;
+    }
+}
+
+.card-t{
+    animation-duration: 3s;
+    animation-name: cardt;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-direction: alternate;
+}
+
+@keyframes cardt{
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.red-a{
+    transition: all 1s  ;
+}
+
+.red-a:hover{
+    border-radius: 20%;
+    border-color: #BF045B;
+    background-color: #A6033F;
+}
